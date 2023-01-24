@@ -11,7 +11,7 @@ class BooksItem(scrapy.Item):
     # name = scrapy.Field()
     author = scrapy.Field()
     title = scrapy.Field()
-    year = scrapy.Field()
     price = scrapy.Field()
     types = scrapy.Field()
     rate = scrapy.Field()
+    review = scrapy.Field()
