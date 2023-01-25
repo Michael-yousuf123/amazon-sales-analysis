@@ -5,24 +5,6 @@ class AmazonSpider(scrapy.Spider):
     name = 'amazon'
     allowed_domains = ['www.amazon.com']
     start_urls = ['https://www.amazon.com/gp/bestsellers/2019/books/ref=zg_bsar_pg_1/ref=zg_bsar_pg_1?ie=UTF8&pg=1']
-    # url = 'https://www.amazon.com/gp/bestsellers/2009/books/ref=zg_bsar_pg_{}/ref=zg_bsar_pg_{}?ie=UTF8&pg={}'
- 
-    # def parse(self, response):
-    #     """
-    #     """
-    #     item = BooksItem()
-    #     item["author"] = response.css(".a-link-child ._cDEzb_p13n-sc-css-line-clamp-1_1Fn1y::text").extract()
-    #     item["title"] = response.css(".a-link-normal ._cDEzb_p13n-sc-css-line-clamp-1_1Fn1y::text").extract()
-    #     item["types"] = response.css(".a-text-normal::text").extract()
-    #     item["price"] = response.css(".a-size-base , ._cDEzb_p13n-sc-price_3mJ9Z::text").extract()
-    #     item["review"] = response.css(".a-link-normal .a-size-small::text").extract()
-    #     item["rate"] = response.css(".a-link-normal .a-icon-alt::text").extract()
-    #     return item
-        
-    #     next_page = response.css('.a-last a ::attr(href)').extract_first()
-
-    #     if next_page:
-    #         yield scrapy.Request(response.urljoin(next_page),callback=self.parse)
     def parse(self, response):
 
 
