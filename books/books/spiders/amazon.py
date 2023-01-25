@@ -4,7 +4,7 @@ from books.items import BooksItem
 class AmazonSpider(scrapy.Spider):
     name = 'amazon'
     allowed_domains = ['www.amazon.com']
-    start_urls = ['https://www.amazon.com/gp/bestsellers/2009/books/ref=zg_bsar_pg_1/ref=zg_bsar_pg_1?ie=UTF8&pg=1']
+    start_urls = ['https://www.amazon.com/gp/bestsellers/2019/books/ref=zg_bsar_pg_1/ref=zg_bsar_pg_1?ie=UTF8&pg=1']
     # url = 'https://www.amazon.com/gp/bestsellers/2009/books/ref=zg_bsar_pg_{}/ref=zg_bsar_pg_{}?ie=UTF8&pg={}'
  
     # def parse(self, response):
